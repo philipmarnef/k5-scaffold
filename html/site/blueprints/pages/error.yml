@@ -1,0 +1,34 @@
+title: 
+  en: Error Page
+  nl: Foutpagina
+  fr: Page d’erreur
+
+tabs:
+# tab
+  fields:
+    label:
+      en: Fields
+      nl: Velden
+      fr: Champs
+    icon: text
+    columns:
+    # column
+      main:
+        width: 2/3
+        sections:
+        # section
+          fields:
+            type: fields
+            fields:
+              text:
+                extends: fields/text-full
+    # column
+      meta:
+        width: 1/3
+        sections:
+        # section
+          meta:
+            type: fields
+            fields:
+              meta:
+                extends: fields/meta

@@ -1,0 +1,44 @@
+{
+  "name": "k4-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "type": "module",
+  "scripts": {
+    "serve": "npx gulp serve",
+    "build": "NODE_ENV=production npx gulp build",
+    "push": "rsync -avhi html/ root@example.com:/var/www/example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+    "pull-content": "rsync -avhi root@example.com:/var/www/example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete",
+    "push-staging": "rsync -avhi html/ root@staging.example.com:/var/www/staging.example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+    "push-content-staging": "rsync -avhi html/content/ root@staging.example.com:/var/www/staging.example.com/html/content --chown=www-data:www-data --delete",
+    "pull-content-staging": "rsync -avhi root@staging.example.com:/var/www/staging.example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete"
+  },
+  "keywords": [],
+  "author": "Philip Marnef",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipmarnef/k4-scaffold"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^3.0.3",
+    "css-loader": "^7.1.2",
+    "cssnano": "^7.0.7",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss": "^8.4.47",
+    "postcss-easy-import": "^4.0.0",
+    "tailwindcss": "^4.1.6",
+    "webpack-stream": "^7.0.0"
+  },
+  "browserslist": [
+    "cover 99.5% in BE, not dead, not op_mini all"
+  ]
+}

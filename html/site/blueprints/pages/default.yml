@@ -1,0 +1,30 @@
+title: 
+  nl: Gewone Pagina
+  en: Default Page
+  fr: Page de défault
+
+tabs:
+# tab
+  fields:
+    label:
+      nl: Velden
+      en: Fields
+      fr: Champs
+    icon: text
+    columns:
+    # column
+      main:
+        width: 2/3
+        sections:
+        # section
+          fields:
+            type: fields
+            fields:
+              text:
+                extends: fields/text-full
+
+# tab
+  media: tabs/media
+
+# tab
+  media: tabs/meta

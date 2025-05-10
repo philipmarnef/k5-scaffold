@@ -1,0 +1,6 @@
+:root {
+	--gutter: 1rem;
+}
+
+/* don't break up email addresses */
+a[href*="mailto"] { white-space: nowrap; }

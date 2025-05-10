@@ -1,0 +1,17 @@
+@theme {
+
+	--breakpoint-*: initial;
+	--breakpoint-xs:   375px;  /* smartphone */
+	--breakpoint-sm:   640px;  /* phablet | + 335 */
+	--breakpoint-md:   810px;  /* tablet, portrait | + 170 */
+	--breakpoint-lg:  1024px;  /* tablet, landscape | + 214 */
+	--breakpoint-xl:  1366px;  /* laptop | + 342 */
+	--breakpoint-2xl: 1680px;  /* desktop | + 314 */
+	--breakpoint-3xl: 1920px;  /* large screens | + 240 */
+
+	--color-black: #000;
+	--color-white: #fff;
+
+	--spacing-gutter: var(--gutter);
+
+}

@@ -1,0 +1,12 @@
+type: markdown
+label:
+  en: Text
+  nl: Tekst
+  fr: Texte
+size: one-line
+buttons:
+  - bold
+  - italic
+  - link
+  - pagelink
+  - email
