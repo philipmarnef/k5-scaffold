@@ -20,7 +20,7 @@ bower_components
 .idea*
 *.sass-cache*
 rev-manifest.json
-.cache
+.*cache
 
 # Credentials
 .env

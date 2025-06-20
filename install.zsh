@@ -21,18 +21,18 @@ url="${protocol}://${domain}"
 echo "Your local development site runs at ${url}, updating gulpfile.js"
 
 # set baseUrl in gulpfile
-sed -i '' "s,http://k4-scaffold.test,${url},g" gulpfile.js
+sed -i '' "s,http://k5-scaffold.test,${url},g" gulpfile.js
 
 # get the production domain
 vared -p "What is the production domain? " -c production
 echo "Your production site domain is ${production}, updating html/site/snippets/head.php"
 
 # set robots directive in head.php
-sed -i '' "s,k4-scaffold.test,${production},g" html/site/snippets/head.php
+sed -i '' "s,k5-scaffold.test,${production},g" html/site/snippets/head.php
 
 # update package.json
-sed -i '' "s,\"k4-scaffold\",\"${production}\",g" package.json
-sed -i '' "s,https://github.com/philipmarnef/k4-scaffold,,g" package.json
+sed -i '' "s,\"k5-scaffold\",\"${production}\",g" package.json
+sed -i '' "s,https://github.com/philipmarnef/k5-scaffold,,g" package.json
 sed -i '' "s,ISC,UNLICENSED,g" package.json
 # remove package-lock.json
 rm package-lock.json
