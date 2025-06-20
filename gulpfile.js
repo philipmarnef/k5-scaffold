@@ -3,7 +3,7 @@ import {deleteAsync}      from    'del'
 import gulp               from    'gulp'
 import sourcemaps         from    'gulp-sourcemaps'
 import postcss            from    'gulp-postcss'
-import tailwind           from    'tailwindcss'
+import tailwind           from    '@tailwindcss/postcss'
 import browserSync        from    'browser-sync'
 import webpack            from    'webpack-stream'
 
