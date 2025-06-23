@@ -9,7 +9,7 @@ import webpack            from    'webpack-stream'
 
 const forProduction = process.env.NODE_ENV === 'production'
 
-const baseUrl = 'http://k4-scaffold.test'
+const baseUrl = 'http://k5-scaffold.test'
 
 let postcssPlugins = [
   tailwind(),

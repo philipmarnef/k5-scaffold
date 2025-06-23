@@ -1,5 +1,5 @@
 {
-  "name": "k4-scaffold",
+  "name": "k5-scaffold",
   "version": "1.0.0",
   "description": "",
   "main": "index.php",
@@ -18,7 +18,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/philipmarnef/k4-scaffold"
+    "url": "https://github.com/philipmarnef/k5-scaffold"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
