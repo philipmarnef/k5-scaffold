@@ -3,7 +3,7 @@
 	use Kirby\Toolkit\Html;
 	use Bnomei\Fingerprint; 
 
-	$lang = $kirby->currentLanguage()->locale(LC_ALL) ?? 'en-UK';
+	$lang = $kirby->currentLanguage()?->locale(LC_ALL) ?? 'en-UK';
 	$lang = str_replace('_', '-', $lang);
 ?>
 <!DOCTYPE html>
