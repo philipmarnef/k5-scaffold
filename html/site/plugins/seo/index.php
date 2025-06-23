@@ -1,6 +1,6 @@
 <?php
 
-return Kirby\Cms\App::plugin('phm/seo', [
+Kirby\Cms\App::plugin('k5-scaffold/seo', [
 	'blueprints' => [
 		'fields/seo-description' => __DIR__ . '/blueprints/fields/seo-description.yml',
 		'fields/seo-image' => __DIR__ . '/blueprints/fields/seo-image.yml',

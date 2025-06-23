@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # get the local dev domain
-vared -p "What is the local development domain? " -c domain
+vared -p "What is the local development domain? " -c develop
 
 protocol='http'
 vared -p "Does your local domain run on https? (Yes/No) " -c yesno
@@ -17,7 +17,7 @@ case $yesno in
 esac
 done
 
-url="${protocol}://${domain}"
+url="${protocol}://${develop}"
 echo "Your local development site runs at ${url}, updating gulpfile.js"
 
 # set baseUrl in gulpfile
