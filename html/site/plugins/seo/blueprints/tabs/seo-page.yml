@@ -9,8 +9,10 @@ columns:
       seo:
         type: fields
         fields:
-          seo_description: 
-            extends: fields/seo-description
+          seo_robots:
+            extends: fields/seo-robots
+            width: 1/2
+          seo_description: fields/seo-description
 # column
   seo_image:
     width: 1/3

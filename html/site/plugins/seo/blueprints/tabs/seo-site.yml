@@ -9,6 +9,9 @@ columns:
       seo:
         type: fields
         fields:
+          seo_robots:
+            extends: fields/seo-robots
+            width: 1/2
           seo_description: fields/seo-description
           twitter_username:
             type: text

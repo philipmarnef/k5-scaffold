@@ -1,0 +1,15 @@
+label:
+  en: Visible for search bots?
+  nl: Zichtbaar voor zoekrobots?
+  fr: Visible pour les robots de recherche ?
+type: toggle
+text:
+  -
+    en: "No"
+    nl: "Nee"
+    fr: "Non"
+  -
+    en: "Yes"
+    nl: "Ja"
+    fr: "Oui"
+default: true

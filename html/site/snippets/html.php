@@ -14,7 +14,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<?php if ( $_SERVER['HTTP_HOST'] !== 'k5-scaffold.test' ) { ?>
+		<?php if ( $_SERVER['HTTP_HOST'] !== 'k5-scaffold.test' || $page->seo_robots()->isFalse() ) { ?>
 
 			<meta name="robots" content="noindex,nofollow,noodp">
 			<title><?= $site->title() ?></title>
