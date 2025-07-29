@@ -104,7 +104,6 @@ function watch () {
     open: false
   })
   gulp.watch([
-    './tailwind.config.js',
     './src/css/**/*',
     './html/site/**/*.php',
   ], {usePolling: true}, css)
