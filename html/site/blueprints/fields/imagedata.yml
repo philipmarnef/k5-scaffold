@@ -1,5 +1,12 @@
 type: group
 fields:
+  caption:
+    label: 
+      en: Caption
+      nl: Bijschrift
+      fr: Légende
+    extends: fields/text-simple
+    size: small
   alt:
     label:
       en: Alt text
@@ -8,9 +15,9 @@ fields:
     type: text
     width: 1/2
     help:
-      en: Description of the image. Is displayed when the image cannot be displayed (yet) and is read by search engines and assistive software.
-      nl: Beschrijving van de afbeelding. Wordt weergegeven wanneer de afbeelding niet kan geladen worden en uitgelezen door zoekrobots of voorlees-software.
-      fr: Description de l'image. S'affiche lorsque l'image ne peut pas (encore) être affichée et est lue par les moteurs de recherche et les logiciels d'assistance.
+      en: Description of the image for search engines and assistive software. Can be left empty if there's a caption.
+      nl: Beschrijving van de afbeelding voor zoekmachines en ondersteunende software. Mag leeg blijven als er een bijschrift is.
+      fr: Description de l'image pour les moteurs de recherche et les logiciels d'assistance. Peut être laissé vide s'il y a une légende.
   title:
     label: 
       en: Tooltip
