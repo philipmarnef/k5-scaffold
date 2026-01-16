@@ -25,6 +25,7 @@ rev-manifest.json
 # Credentials
 .env
 .ENV
+keys*.php
 
 # License
 html/site/config/.license
