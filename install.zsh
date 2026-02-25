@@ -25,10 +25,10 @@ sed -i '' "s,http://k5-scaffold.test,${url},g" gulpfile.js
 
 # get the production domain
 vared -p "What is the production domain? " -c production
-echo "Your production site domain is ${production}, updating html/site/snippets/head.php"
+echo "Your production site domain is ${production}, updating html/site/snippets/html.php"
 
 # set robots directive in head.php
-sed -i '' "s,k5-scaffold.test,${production},g" html/site/snippets/head.php
+sed -i '' "s,k5-scaffold.test,${production},g" html/site/snippets/html.php
 
 # update package.json
 sed -i '' "s,\"k5-scaffold\",\"${production}\",g" package.json
