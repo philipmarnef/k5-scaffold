@@ -1,0 +1,15 @@
+name: 
+  nl: Tekst
+  en: Text
+  fr: Texte
+icon: text
+preview: markdown
+wysiwyg: true
+fields:
+  text:
+    label:
+      en: Text
+      nl: Tekst
+      fr: Texte
+    extends: fields/text-full
+    size: medium

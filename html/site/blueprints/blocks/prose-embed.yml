@@ -1,0 +1,15 @@
+name: 
+  nl: Gedeelde widget
+  en: Shared widget
+  fr: Widget partagé
+icon: code
+fields:
+  code:
+    label:
+      en: Embed code
+      nl: Embed code
+      fr: Code à intégrer
+    type: textarea
+    font: monospace
+    buttons: false
+    size: large

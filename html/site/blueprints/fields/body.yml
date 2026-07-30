@@ -1,0 +1,8 @@
+label:
+  nl: Inhoud
+  en: Content
+  fr: Contenu
+type: blocks
+fieldsets:
+  - prose
+  - prose-embed

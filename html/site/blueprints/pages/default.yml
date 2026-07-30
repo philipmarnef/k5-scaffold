@@ -20,8 +20,8 @@ tabs:
           fields:
             type: fields
             fields:
-              text:
-                extends: fields/text-full
+              body:
+                extends: fields/body
 
 # tab
   media: tabs/media
