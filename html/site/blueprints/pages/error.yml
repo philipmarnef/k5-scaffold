@@ -1,6 +1,6 @@
 title: 
-  en: Error Page
   nl: Foutpagina
+  en: Error Page
   fr: Page d’erreur
 
 tabs:
@@ -22,13 +22,3 @@ tabs:
             fields:
               text:
                 extends: fields/text-full
-    # column
-      meta:
-        width: 1/3
-        sections:
-        # section
-          meta:
-            type: fields
-            fields:
-              meta:
-                extends: fields/meta
