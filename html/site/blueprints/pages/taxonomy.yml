@@ -1,0 +1,51 @@
+title:
+  nl: Taxonomie
+  en: Taxonomy
+  fr: Taxonomie
+icon: tag
+image:
+  query: icon
+  back: white
+
+status:
+  draft:
+    label:
+      nl: Klad
+      en: Draft
+      fr: Brouillon
+  unlisted:
+    label:
+      nl: Gepubliceerd
+      en: Published
+      fr: Publié
+
+tabs:
+# tab
+  terms:
+    label: 
+      nl: Termen
+      en: Terms
+      fr: Termes
+    icon: tag
+    columns:
+    # column
+      terms:
+        width: 1/2
+        sections:
+        # section
+          terms:
+            label:
+              nl: Termen
+              en: Terms
+              fr: Termes
+            type: pages
+            template: term
+            create:
+              - term
+            empty:
+              nl: Nog geen termen
+              en: No terms yet
+              fr: Pas encore de termes
+
+# tab
+  history: tabs/history

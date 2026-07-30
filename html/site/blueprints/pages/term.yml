@@ -1,0 +1,55 @@
+title:
+  nl: Term
+  en: Term
+  fr: Terme
+create:
+  title:
+    label:
+      nl: Naam
+      en: Name
+      fr: Nom
+  slug: "{{ page.title.slug }}"
+  redirect: false
+  status: unlisted
+status:
+  draft:
+    label:
+      en: Draft
+      nl: Klad
+      fr: Brouillon
+  unlisted:
+    label:
+      en: Published
+      nl: Gepubliceerd
+      fr: Publié
+
+tabs:
+# tab
+  children:
+    label:
+      en: Sub terms
+      nl: Subtermen
+      fr: Sous-termes
+    icon: tree
+    columns:
+    # column
+      terms:
+        width: 1/2
+        sections:
+        # section
+          terms:
+            label:
+              en: Sub terms
+              nl: Subtermen
+              fr: Sous-termes
+            type: pages
+            template: term
+            create:
+              - term
+            empty:
+              nl: Nog geen termen
+              en: No terms yet
+              fr: Pas encore de termes
+
+# tab
+  history: tabs/history
