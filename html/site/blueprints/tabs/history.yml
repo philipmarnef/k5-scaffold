@@ -1,7 +1,8 @@
 label:
-  en: Info
-  nl: Info
-icon: info
+  nl: Geschiedenis
+  en: History
+  nl: Histoire
+icon: clock
 columns:
   info:
     width: 1/1
