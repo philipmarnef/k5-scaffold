@@ -27,4 +27,7 @@ tabs:
   media: tabs/media
 
 # tab
+  media: tabs/meta/page
+
+# tab
   history: tabs/history

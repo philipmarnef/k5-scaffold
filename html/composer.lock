@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52a60ff8a6153d1880e307c71f71b3cc",
+    "content-hash": "712dcd7c8c566eeff7c7d7ccfe31bf30",
     "packages": [
         {
             "name": "bnomei/kirby3-fingerprint",
@@ -452,6 +452,69 @@
                 }
             ],
             "time": "2023-11-30T09:05:03+00:00"
+        },
+        {
+            "name": "fabianmichael/kirby-meta",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabianmichael/kirby-meta.git",
+                "reference": "dc0faff7646c7e1f2636105e9b983a7852eae037"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-meta/zipball/dc0faff7646c7e1f2636105e9b983a7852eae037",
+                "reference": "dc0faff7646c7e1f2636105e9b983a7852eae037",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.8"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "meta"
+            },
+            "autoload": {
+                "psr-4": {
+                    "FabianMichael\\Meta\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Michael",
+                    "email": "hallo@fabianmichael.de"
+                }
+            ],
+            "description": "Your all-in-one powerhouse for any SEO and metadata needs imaginable.",
+            "homepage": "https://github.com/fabianmichael/kirby-meta",
+            "keywords": [
+                "kirby3",
+                "kirby3-cms",
+                "kirby3-plugin",
+                "meta",
+                "metadata",
+                "panel",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/fabianmichael/kirby-meta/issues",
+                "source": "https://github.com/fabianmichael/kirby-meta/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabianmichael",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-03-13T15:10:58+00:00"
         },
         {
             "name": "filp/whoops",
