@@ -1,0 +1,52 @@
+title: 
+  nl: Collectie
+  en: Collection
+  fr: Collection
+status:
+  draft:
+    label:
+      nl: Klad
+      en: Draft
+      fr: Brouillon
+  unlisted:
+    label:
+      nl: Gepubliceerd
+      en: Published
+      fr: Publié
+
+tabs:
+# tab
+  pages:
+    label:
+      nl: Pagina's
+      en: Pages
+      fr: Pages
+    icon: folder-structure
+    columns:
+    # column
+      published:
+        width: 1/2
+        sections:
+        # section
+          published:
+            label:
+              nl: Gepubliceerd
+              en: Published
+              fr: Publié
+            type: pages
+            status: published
+    # column
+      drafts:
+        width: 1/2
+        sections:
+        # section
+          drafts:
+            label:
+              nl: Klad
+              en: Drafts
+              fr: Brouillon
+            type: pages
+            status: draft
+
+# tab
+  history: tabs/history
