@@ -38,7 +38,7 @@ tabs:
               nl: Concepten
             type: pages
             status: draft
-            create:
+            template:
               - default
 # tab
   settings:

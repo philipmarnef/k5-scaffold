@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * @var Kirby\Cms\App $kirby
+ * @var Kirby\Cms\Site $site
+ * @var Kirby\Cms\Page $page
+ * @var Kirby\Template\Slots $slots
+ */
+
 	use Kirby\Toolkit\Html;
 	use Bnomei\Fingerprint; 
 

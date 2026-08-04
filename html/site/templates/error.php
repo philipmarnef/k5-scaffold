@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * @var Kirby\Cms\Page $page
+ */
+
+?>
 <?php snippet('html', slots: true) ?>
 
 	<?php	slot('body') ?>
