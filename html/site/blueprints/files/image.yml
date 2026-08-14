@@ -3,7 +3,7 @@ title:
   nl: Afbeelding
   fr: Image
 accept:
-  mime: image/jpeg, image/png, image/gif
+  mime: image/jpeg, image/png, image/gif, image/webp
 # maximum 25Mb
   maxsize: 26214400
 create:
