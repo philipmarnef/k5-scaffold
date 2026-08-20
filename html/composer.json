@@ -4,7 +4,7 @@
     "bnomei/kirby3-fingerprint": "^3.1",
     "johannschopplich/kirbylog": "^1.4",
     "hananils/kirby-methods-folder": "^2.0",
-    "fabianmichael/kirby-markdown-field": "^3.0.0-alpha.2",
+    "fabianmichael/kirby-markdown-field": "^4.0.0",
     "fabianmichael/kirby-meta": "^2.0"
   },
   "config": {

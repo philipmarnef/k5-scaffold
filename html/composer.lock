@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "712dcd7c8c566eeff7c7d7ccfe31bf30",
+    "content-hash": "8ce312701fe77d468761b7efdedb75e8",
     "packages": [
         {
             "name": "bnomei/kirby3-fingerprint",
@@ -398,21 +398,21 @@
         },
         {
             "name": "fabianmichael/kirby-markdown-field",
-            "version": "3.0.0-alpha.2",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
-                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec"
+                "reference": "0e8e1552369e6bb176780f10c02431cfb2d3b953"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/800fe5241abf85bd7309e982cdf0d4deea0b79ec",
-                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/0e8e1552369e6bb176780f10c02431cfb2d3b953",
+                "reference": "0e8e1552369e6bb176780f10c02431cfb2d3b953",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=8.1.0"
+                "php": ">=8.3.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.13",
@@ -443,7 +443,7 @@
             "homepage": "https://github.com/fabianmichael/kirby-markdown-field",
             "support": {
                 "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
-                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/3.0.0-alpha.2"
+                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/4.0.0"
             },
             "funding": [
                 {
@@ -451,7 +451,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-30T09:05:03+00:00"
+            "time": "2026-02-05T08:58:54+00:00"
         },
         {
             "name": "fabianmichael/kirby-meta",
@@ -1622,7 +1622,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fabianmichael/kirby-markdown-field": 15,
         "getkirby/cms": 10
     },
     "prefer-stable": false,
