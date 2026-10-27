@@ -37,10 +37,16 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"postcss": "^8.4.47",
 		"postcss-easy-import": "^4.0.0",
-		"sharp": "^0.35.3",
+		"sharp": "^0.35.5",
 		"webpack-stream": "^7.0.0"
 	},
 	"browserslist": [
 		"cover 99.5% in BE, not dead, not op_mini all"
-	]
+	],
+	"allowScripts": {
+		"es5-ext@0.10.64": true,
+		"fsevents@2.3.3": true,
+		"sharp@0.33.5": true,
+		"sharp@0.35.5": true
+	}
 }
