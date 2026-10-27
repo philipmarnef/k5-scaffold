@@ -1,44 +1,46 @@
 {
-  "name": "k5-scaffold",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.php",
-  "type": "module",
-  "scripts": {
-    "serve": "npx gulp serve",
-    "build": "NODE_ENV=production npx gulp build",
-    "push": "rsync -avhi html/ root@example.com:/var/www/example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
-    "pull-content": "rsync -avhi root@example.com:/var/www/example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete",
-    "push-staging": "rsync -avhi html/ root@staging.example.com:/var/www/staging.example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
-    "push-content-staging": "rsync -avhi html/content/ root@staging.example.com:/var/www/staging.example.com/html/content --chown=www-data:www-data --delete",
-    "pull-content-staging": "rsync -avhi root@staging.example.com:/var/www/staging.example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete"
-  },
-  "keywords": [],
-  "author": "Philip Marnef",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/philipmarnef/k5-scaffold"
-  },
-  "devDependencies": {
-    "@babel/core": "^8.0.1",
-    "@babel/preset-env": "^8.0.2",
-    "@tailwindcss/postcss": "^4.1.6",
-    "babel-loader": "^10.1.1",
-    "browser-sync": "^3.0.4",
-    "css-loader": "^7.1.2",
-    "cssnano": "^7.0.7",
-    "del": "^8.0.1",
-    "gulp": "^5.0.1",
-    "gulp-postcss": "^10.0.0",
-    "gulp-sharp-optimize-images": "^4.0.3",
-    "gulp-sourcemaps": "^2.6.5",
-    "postcss": "^8.4.47",
-    "postcss-easy-import": "^4.0.0",
-    "sharp": "^0.35.3",
-    "webpack-stream": "^7.0.0"
-  },
-  "browserslist": [
-    "cover 99.5% in BE, not dead, not op_mini all"
-  ]
+	"name": "k5-scaffold",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.php",
+	"type": "module",
+	"scripts": {
+		"serve": "npx gulp serve",
+		"build": "NODE_ENV=production npx gulp build",
+		"push": "rsync -avhi html/ root@example.com:/var/www/example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+		"push-with-content": "rsync -avhi html/ root@example.com:/var/www/example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude-with-content --delete",
+		"pull-content": "rsync -avhi root@example.com:/var/www/example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete",
+		"push-staging": "rsync -avhi html/ root@staging.example.com:/var/www/staging.example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+		"push-staging-with-content": "rsync -avhi html/ root@staging.example.com:/var/www/staging.example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude-with-content --delete",
+		"push-content-staging": "rsync -avhi html/content/ root@staging.example.com:/var/www/staging.example.com/html/content --chown=www-data:www-data --delete",
+		"pull-content-staging": "rsync -avhi root@staging.example.com:/var/www/staging.example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete"
+	},
+	"keywords": [],
+	"author": "Philip Marnef",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/philipmarnef/k5-scaffold"
+	},
+	"devDependencies": {
+		"@babel/core": "^8.0.1",
+		"@babel/preset-env": "^8.0.2",
+		"@tailwindcss/postcss": "^4.1.6",
+		"babel-loader": "^10.1.1",
+		"browser-sync": "^3.0.4",
+		"css-loader": "^7.1.2",
+		"cssnano": "^7.0.7",
+		"del": "^8.0.1",
+		"gulp": "^5.0.1",
+		"gulp-postcss": "^10.0.0",
+		"gulp-sharp-optimize-images": "^4.0.3",
+		"gulp-sourcemaps": "^2.6.5",
+		"postcss": "^8.4.47",
+		"postcss-easy-import": "^4.0.0",
+		"sharp": "^0.35.3",
+		"webpack-stream": "^7.0.0"
+	},
+	"browserslist": [
+		"cover 99.5% in BE, not dead, not op_mini all"
+	]
 }

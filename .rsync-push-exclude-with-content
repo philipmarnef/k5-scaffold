@@ -1,0 +1,8 @@
+.DS_Store
+.cache
+.env
+.license
+node_modules
+storage/cache
+storage/sessions
+public/media
