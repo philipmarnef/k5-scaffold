@@ -28,7 +28,7 @@ vared -p "What is the production domain? " -c production
 echo "Your production site domain is ${production}, updating html/site/snippets/html.php"
 
 # set robots directive in head.php
-sed -i '' "s,k5-scaffold.test,${production},g" html/site/snippets/html.php
+sed -i '' "s,example.com,${production},g" html/site/snippets/html.php
 
 # update package.json
 sed -i '' "s,\"k5-scaffold\",\"${production}\",g" package.json

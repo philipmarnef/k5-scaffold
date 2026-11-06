@@ -7,75 +7,75 @@
  * @var Kirby\Template\Slots $slots
  */
 
-	use Kirby\Toolkit\Html;
-	use Bnomei\Fingerprint; 
+use Kirby\Toolkit\Html;
+use Bnomei\Fingerprint;
 
-	$lang = $kirby->currentLanguage()?->locale(LC_ALL) ?? 'en-UK';
-	$lang = str_replace('_', '-', $lang);
+$lang = $kirby->currentLanguage()?->locale(LC_ALL) ?? 'en-UK';
+$lang = str_replace('_', '-', $lang);
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 
-	<head>
+<head>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<?php if ( $_SERVER['HTTP_HOST'] !== 'k5-scaffold.test' || $page->seo_robots()->isFalse() ) { ?>
+	<?php if ($_SERVER['HTTP_HOST'] !== 'example.com') { ?>
 
-			<meta name="robots" content="noindex,nofollow,noodp">
-			<title><?= $site->title() ?></title>
+		<meta name="robots" content="noindex,nofollow,noodp">
+		<title><?= $site->title() ?></title>
 
-		<?php } else { ?>
+	<?php } else { ?>
 
-			<?= snippet('seo') ?>
+		<?= snippet('meta') ?>
 
-		<?php } ?>
+	<?php } ?>
 
-		<link href="<?= $page->url() ?>" rel="canonical">
+	<link href="<?= $page->url() ?>" rel="canonical">
 
-		<?php if ( !$page->isHomePage() ) { ?>
+	<?php if (!$page->isHomePage()) { ?>
 
-			<link href="<?= $site->homePage()->url() ?>" rel="home">
+		<link href="<?= $site->homePage()->url() ?>" rel="home">
 
-		<?php } ?>
+	<?php } ?>
 
-		<?php if ( $kirby->multilang() ) { ?>
+	<?php if ($kirby->multilang()) { ?>
 
-			<?php	foreach ( $kirby->languages() as $language ) { ?>
+		<?php foreach ($kirby->languages() as $language) { ?>
 
-				<?php	
-					$href = $page->url($language->code());
-					$lang = $language->code();
-				?>
+			<?php
+			$href = $page->url($language->code());
+			$lang = $language->code();
+			?>
+
+			<?= Html::tag('link', null, [
+				'href' => $href,
+				'rel' => 'alternate',
+				'hreflang' => $lang,
+			]); ?>
+
+			<?php if ($language->isDefault()) { ?>
 
 				<?= Html::tag('link', null, [
-						'href' => $href,
-						'rel' => 'alternate',
-						'hreflang' => $lang,
+					'href' => $href,
+					'rel' => 'alternate',
+					'hreflang' => 'x-default',
 				]); ?>
-
-				<?php if ( $language->isDefault() ) { ?>
-
-					<?= Html::tag( 'link', null, [
-						'href' => $href,
-						'rel' => 'alternate',
-						'hreflang' => 'x-default',
-					] ); ?>
-
-				<?php } ?>
 
 			<?php } ?>
 
 		<?php } ?>
 
-		<?= Fingerprint::css('assets/css/main.css') ?>
-		<?= Fingerprint::js('assets/js/main.js') ?>
+	<?php } ?>
 
-		<?= $slots?->head() ?? '' ?>
+	<?= Fingerprint::css('assets/css/main.css') ?>
+	<?= Fingerprint::js('assets/js/main.js') ?>
 
-	</head>
+	<?= $slots?->head() ?? '' ?>
 
-	<?= $slots?->body() ?? '<body></body>' ?>
+</head>
+
+<?= $slots?->body() ?? '<body></body>' ?>
 
 </html>
